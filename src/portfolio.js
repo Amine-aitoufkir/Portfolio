@@ -136,7 +136,7 @@ const educationInfo = {
     },
     {
       schoolName: "Lycée Pythagore",
-      logo: "/pythagore-logo.JPEG",
+      logo: "/pi.png",
       url: "https://groupescolairepythagore.com/",
       formations: [
         {
@@ -418,7 +418,7 @@ const contactInfo = {
   title: emoji("Contactez-moi ☎️"),
   subtitle:
     "Étudiant en ingénierie informatique et réseaux | Passionné par la convergence IA & Web3",
-  number: "+92-0000000000",
+  number: "+212-621542328",
   email_address: "atmine7@gmail.com"
 };
 

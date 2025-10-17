@@ -14,6 +14,13 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
+            <div className="contact-profile-container">
+              <img
+                src="/Gemini_Generated_Image_n39xlin39xlin39x (2).png"
+                alt="Amine Ait Oufkir"
+                className="contact-profile-image"
+              />
+            </div>
             <h1 className="heading contact-title">{contactInfo.title}</h1>
             <p
               className={
