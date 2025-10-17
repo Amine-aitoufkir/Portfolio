@@ -10,16 +10,21 @@ export default function Footer() {
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          {emoji("Made with ❤️ by DeveloperFolio Team")}
-        </p>
-        <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
+          {emoji("© 2025 – Réalisé par ")}{" "}
           <a
-            href="https://github.com/saadpasta/developerFolio"
+            href="mailto:atmine7@gmail.com"
+            className="footer-link"
+          >
+            Amine Ait Oufkir
+          </a>
+          {emoji(" | Thème personnalisé ")}{" "}
+          <a
+            href="https://github.com/Amine-aitoufkir"
             target="_blank"
             rel="noreferrer"
+            className="footer-link"
           >
-            developerFolio
+            AYTO
           </a>
         </p>
       </div>

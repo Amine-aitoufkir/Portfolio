@@ -4,6 +4,8 @@
   display: flex;
   width: 100%;
   overflow: hidden;
+  align-items: center;
+  gap: 60px;
 }
 
 .skills-text-div {
@@ -22,10 +24,14 @@
 
 .skills-heading {
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 700;
+  color: $titleColor;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 .subTitle {
   color: $subTitle;
+  line-height: 1.6;
 }
 
 /* Media Query */

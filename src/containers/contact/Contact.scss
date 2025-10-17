@@ -2,6 +2,8 @@
 
 .contact-div-main {
   display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 .dark-mode a {
@@ -13,28 +15,35 @@
 }
 
 .contact-title {
-  font-size: 65px;
-  font-weight: 400;
+  font-size: 56px;
+  font-weight: 700;
+  color: $titleColor;
+  margin-bottom: 2rem;
 }
 
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 40px;
-  font-weight: 400;
-  color: $subTitle;
+  font-size: 32px;
+  font-weight: 500;
+  color: $buttonColor;
   text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-  color: $textColor;
-  text-shadow: 2px 1px 2px $contactDetailHoverTS;
-  transition: all 0.3s;
+  color: $buttonHover;
+  transform: translateX(5px);
 }
 
 .contact-subtitle {
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $subTitle;
+  font-size: 0.9rem;
 }
 
 .contact-text-div {

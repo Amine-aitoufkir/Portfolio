@@ -3,6 +3,8 @@
 .footer-text {
   text-align: center;
   color: $subTitle !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .dark-mode {
@@ -10,6 +12,38 @@
 }
 
 .footer-div {
-  margin-top: 2rem;
-  padding-bottom: 1rem;
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(211, 211, 211, 0.3);
+}
+
+.footer-link {
+  color: $buttonColor;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  
+  &:hover {
+    border-bottom-color: $buttonColor;
+    opacity: 0.8;
+  }
+}
+
+.dark-mode .footer-text {
+  color: #d1d5db !important;
+}
+
+.dark-mode .footer-link {
+  color: #93c5fd;
+  
+  &:hover {
+    border-bottom-color: #93c5fd;
+    opacity: 0.8;
+  }
+}
+
+.dark-mode .footer-div {
+  border-top-color: rgba(75, 85, 99, 0.3);
 }

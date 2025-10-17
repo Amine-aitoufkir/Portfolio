@@ -3,15 +3,13 @@
 .education-card {
   display: flex;
   flex-direction: row;
+  transition: all 0.3s ease;
 }
 
 .education-card:hover + .education-card-border {
-  border-color: $educationCardBorder;
+  border-color: $buttonColor;
   width: 100%;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .education-card-border {
@@ -19,25 +17,46 @@
   width: 80%;
   border-top: 2px solid $lightBorder1;
   margin-bottom: 20px;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .education-head {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .education-text-school {
   margin: 0;
   font-size: 28px;
   font-weight: 700;
+  color: $titleColor;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   height: 27px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-variant-ligatures: normal;
+  -webkit-font-variant-ligatures: normal;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.education-school-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.education-school-link:hover {
+  color: $buttonColor;
+  border-bottom-color: $buttonColor;
+}
+
+.education-school-link:hover .education-text-school {
+  color: $buttonColor;
 }
 
 .education-roundedimg {
@@ -45,8 +64,14 @@
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
+  border: 3px solid white;
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover .education-roundedimg {
+  transform: scale(1.05);
 }
 
 .education-card-right {
@@ -55,16 +80,16 @@
 
 .education-text-subHeader {
   color: $textColor;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 19px;
   margin: 0px;
   padding-top: 0.8rem;
-  line-height: normal;
+  line-height: 1.5;
 }
 
 .education-text-duration {
-  color: $titleColor;
-  font-size: 19px;
+  color: $subTitle;
+  font-size: 18px;
   margin: 0px;
   padding-top: 0.5rem;
 }
@@ -72,10 +97,28 @@
 .education-text-desc {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  color: $textColor;
+  line-height: 1.6;
 }
 
 .education-text-bullets > ul {
   margin-top: 0.5rem;
+}
+
+.dark-mode .education-text-school {
+  color: #f3f4f6 !important;
+}
+
+.dark-mode .education-text-subHeader {
+  color: #e5e7eb !important;
+}
+
+.dark-mode .education-text-duration {
+  color: #d1d5db !important;
+}
+
+.dark-mode .education-text-desc {
+  color: #d1d5db !important;
 }
 
 /* Media Query */

@@ -20,26 +20,23 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Amine",
+  title: "Salut, je suis Amine 👋",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Étudiant en ingénierie informatique et réseaux, expert en développement logiciel.  \nPassionné par l'intersection Web3 et IA, je me spécialise dans la sécurité des blockchains et l'analyse de données on-chain"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "/cv-Aitoufkir-amine (3).pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/Amine-aitoufkir",
+  linkedin: "https://www.linkedin.com/in/amine-ait-oufkir-5aa4062a9/",
+  gmail: "atmine7@gmail.com",
+  instagram: "https://www.instagram.com/atmine7/",
+  twitter: "https://x.com/atmine7",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,16 +45,13 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Mon expertise",
+  subTitle: "EXPERT EN DÉVELOPPEMENT BACKEND & TECHNOLOGIES WEB3",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("🌐 Backend & APIs - Architectures robustes et systèmes distribués"),
+    emoji("🔐 Blockchain - Smart contracts, protocoles DeFi, sécurité"),
+    emoji("📈 Data - Analyse on-chain, oracles, intelligence blockchain"),
+    emoji("⚡ DevOps - Déploiement et monitoring d'applications décentralisées")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -73,8 +67,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Solidity",
+      fontAwesomeClassname: "fab fa-ethereum"
     },
     {
       skillName: "JavaScript",
@@ -85,36 +79,36 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "C",
+      fontAwesomeClassname: "fas fa-file-code"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "C++",
+      fontAwesomeClassname: "fas fa-file-code"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "C#",
+      fontAwesomeClassname: "fas fa-file-code"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "UML",
+      fontAwesomeClassname: "fas fa-project-diagram"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
     },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +120,30 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      schoolName: "ECOLE MAROCCAINE DES SCIENCES DE L'INGÉNIEUR",
+      logo: "/emsi-logo.JPEG",
+      url: "https://emsi.ma/",
+      formations: [
+        {
+          subHeader: "Cycle d'ingénieur en informatique",
+          duration: "2023 – PRESENT"
+        },
+        {
+          subHeader: "Années Préparatoires",
+          duration: "2021 – 2023"
+        }
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Lycée Pythagore",
+      logo: "/pythagore-logo.JPEG",
+      url: "https://groupescolairepythagore.com/",
+      formations: [
+        {
+          subHeader: "Baccalauréat en sciences physiques",
+          duration: "2019 – 2020"
+        }
+      ]
     }
   ]
 };
@@ -153,16 +154,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Programming",
+      progressPercentage: "60%"
     },
     {
       Stack: "Backend",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +175,26 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Projet de Fin d'Année – Plateforme de vente de jeux digitaux",
+      company: "Python & Django",
+      companylogo: "/pd.png",
+      date: "2024",
+      desc: "Conception d'un site e-commerce permettant d'acheter et télécharger des jeux numériques en toute sécurité. Le projet m'a permis d'appliquer Django pour la gestion des utilisateurs, des paiements et du catalogue de jeux.",
+      descBullets: []
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Projet DeFi – Plateforme de prêt et d'emprunt décentralisée",
+      company: "Solidity & React",
+      companylogo: "/def.jpg",
+      date: "2025",
+      desc: "Développement d'un protocole DeFi permettant de déposer, emprunter et rembourser des actifs numériques en toute transparence via des smart contracts Solidity. L'application frontend, conçue en React et Ethers.js, permet aux utilisateurs d'interagir avec le contrat sur le testnet Sepolia à travers une interface moderne et intuitive."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Projet Développement Mobile – Smart Presence",
+      company: "Android",
+      companylogo: "/and.webp",
+      date: "2025",
+      desc: "Conception d'une application Android de gestion des absences pour l'EMSI, permettant le suivi en temps réel des présences des étudiants. L'application intègre l'authentification, la consultation des horaires et la notification automatique des absences, offrant une solution moderne et efficace pour la digitalisation du contrôle de présence."
     }
   ]
 };
@@ -239,63 +237,111 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Réalisations et certifications 🏆"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Mes certifications professionnelles et formations complétées",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+      subtitle: "IBM",
+      image: "/Do.png",
+      imageAlt: "Docker Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Voir la certification",
+          url: "/docker.pdf"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Virtual Networks in Azure",
+      subtitle: "Whizlabs",
+      image: "/Azu.png",
+      imageAlt: "Azure Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Voir la certification",
+          url: "/Azure.pdf"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "React Basics",
+      subtitle: "Meta",
+      image: "/rea.png",
+      imageAlt: "React Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Voir la certification",
+          url: "/React.pdf"
+        }
+      ]
+    },
+    {
+      title: "Introduction to Java and Object-Oriented Programming",
+      subtitle: "University of Pennsylvania",
+      image: "/ja.png",
+      imageAlt: "Java Logo",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: "/java.pdf"
+        }
+      ]
+    },
+    {
+      title: "Introduction to HTML5",
+      subtitle: "University of Michigan",
+      image: "/ml.png",
+      imageAlt: "HTML5 Logo",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: "/html5.pdf"
+        }
+      ]
+    },
+    {
+      title: "Introduction to CSS3",
+      subtitle: "University of Michigan",
+      image: "/cs.png",
+      imageAlt: "CSS3 Logo",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: "/css3.pdf"
+        }
+      ]
+    },
+    {
+      title: "Introduction à la programmation orientée objet (en C++)",
+      subtitle: "École Polytechnique Fédérale de Lausanne",
+      image: "/C.svg",
+      imageAlt: "C++ Logo",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: "/c++.pdf"
+        }
+      ]
+    },
+    {
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/jsc.png",
+      imageAlt: "JavaScript Logo",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: "/js.pdf"
         }
       ]
     }
@@ -324,7 +370,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +389,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +402,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -369,11 +415,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contactez-moi ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Étudiant en ingénierie informatique et réseaux | Passionné par la convergence IA & Web3",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "atmine7@gmail.com"
 };
 
 // Twitter Section

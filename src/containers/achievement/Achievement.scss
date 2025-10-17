@@ -2,17 +2,24 @@
 
 .achievement-heading {
   font-size: 56px;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 700;
+  line-height: 1.2;
   margin: 0px;
+  color: $titleColor;
+  margin-bottom: 1rem;
 }
 .achievement-subtitle {
   text-transform: uppercase;
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $buttonColor;
+  font-size: 0.95rem;
 }
 .subTitle {
   color: $subTitle;
+  line-height: 1.6;
 }
 
 /* Media Query */

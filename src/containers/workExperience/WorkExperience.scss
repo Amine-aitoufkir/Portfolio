@@ -1,20 +1,23 @@
 .experience-cards-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+  gap: 2rem;
 }
 
 .experience-heading {
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 3rem;
 }
 
 .experience-container {
   display: flex;
   width: 90%;
+  max-width: 1400px;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .experience-container > * {

@@ -1,15 +1,20 @@
+@import "../../_globalColor";
+
 .education-heading {
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 700;
+  color: $titleColor;
+  margin-bottom: 3rem;
 }
 
 .education-section {
   display: flex;
   flex-direction: column;
   width: 90%;
+  max-width: 1400px;
   padding: 20px 0px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .education-section > * {
@@ -21,6 +26,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  gap: 30px;
 }
 
 @media (max-width: 1380px) {

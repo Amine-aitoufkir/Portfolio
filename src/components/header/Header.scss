@@ -8,16 +8,21 @@
 /* header */
 
 .dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark;
+  background-color: #1f2937 !important;
+  color: #f3f4f6;
 }
 
 .dark-menu li a {
-  color: $textColorDark !important;
+  color: #e5e7eb !important;
 }
 
 .dark-menu li a:hover {
-  background-color: $buttonColor !important;
+  background-color: rgba(99, 102, 241, 0.2) !important;
+  color: #93c5fd !important;
+}
+
+.dark-menu .logo-name {
+  color: #f9fafb !important;
 }
 
 .header {
@@ -43,11 +48,16 @@
   padding: 15px 20px;
   color: $textColor;
   text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  margin: 0 4px;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  background-color: rgba(99, 102, 241, 0.1);
+  color: $buttonColor;
 }
 
 .header .logo {
@@ -97,7 +107,12 @@
 }
 
 .header .menu-icon .navicon-dark {
-  background: $textColorDark;
+  background: #f3f4f6;
+}
+
+.header .menu-icon .navicon-dark:before,
+.header .menu-icon .navicon-dark:after {
+  background: #f3f4f6;
 }
 
 .header .menu-icon .navicon:before,

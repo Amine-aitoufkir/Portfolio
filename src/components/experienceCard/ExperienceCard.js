@@ -30,9 +30,12 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   };
 
+  const isAndroidCard = cardInfo.company === "Android";
+  const backgroundColor = isAndroidCard ? "#1a1a1a" : rgb(colorArrays);
+
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+      <div style={{background: backgroundColor}} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>

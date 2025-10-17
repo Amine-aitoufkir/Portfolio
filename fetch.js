@@ -94,7 +94,8 @@ if (USE_GITHUB_DATA === "true") {
   req.end();
 }
 
-if (MEDIUM_USERNAME !== undefined) {
+// Only attempt to fetch Medium data when a non-empty username is provided
+if (typeof MEDIUM_USERNAME === 'string' && MEDIUM_USERNAME.trim().length > 0) {
   console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
   const options = {
     hostname: "api.rss2json.com",
@@ -108,7 +109,11 @@ if (MEDIUM_USERNAME !== undefined) {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      throw new Error(ERR.requestMediumFailed);
+      // Log the error but don't throw — allow the rest of the start process to continue
+      console.error(`Medium fetch failed with status ${res.statusCode}. Skipping Medium blogs.`);
+      // consume and discard response to free the socket
+      res.resume();
+      return;
     }
 
     res.on("data", d => {
@@ -123,8 +128,11 @@ if (MEDIUM_USERNAME !== undefined) {
   });
 
   req.on("error", error => {
-    throw error;
+    // Log request errors without throwing so `npm start` won't crash
+    console.error('Error fetching Medium data:', error.message || error);
   });
 
   req.end();
+} else {
+  console.log('No Medium username provided; skipping Medium blog fetch.');
 }

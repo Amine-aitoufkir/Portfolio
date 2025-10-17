@@ -2,6 +2,70 @@
 
 .dark-mode {
   background-color: $darkBackground;
-  color: white;
+  color: #f3f4f6;
   transition: "0.1s";
+}
+
+.dark-mode .greeting-text {
+  color: #f9fafb !important;
+}
+
+.dark-mode .greeting-text-p {
+  color: #e5e7eb !important;
+}
+
+.dark-mode .subTitle {
+  color: #d1d5db !important;
+}
+
+.dark-mode .skills-heading,
+.dark-mode .experience-heading,
+.dark-mode .education-heading,
+.dark-mode .achievement-heading,
+.dark-mode .contact-title,
+.dark-mode .prof-title {
+  color: #f9fafb !important;
+}
+
+.dark-mode .card-title,
+.dark-mode .education-text-school {
+  color: #f3f4f6 !important;
+}
+
+.dark-mode .card-subtitle,
+.dark-mode .education-text-subHeader,
+.dark-mode .education-text-duration,
+.dark-mode .education-text-desc {
+  color: #d1d5db !important;
+}
+
+.dark-mode .experience-text-role,
+.dark-mode .experience-text-company,
+.dark-mode .experience-text-date {
+  color: #f3f4f6 !important;
+}
+
+.dark-mode .experience-text-desc {
+  color: #d1d5db !important;
+}
+
+.dark-mode .bio-text {
+  color: #e5e7eb !important;
+}
+
+.dark-mode .desc-prof {
+  color: #d1d5db !important;
+}
+
+.dark-mode .footer-text {
+  color: #d1d5db !important;
+}
+
+.dark-mode .contact-detail,
+.dark-mode .contact-detail-email {
+  color: #93c5fd !important;
+}
+
+.dark-mode .contact-subtitle {
+  color: #d1d5db !important;
 }

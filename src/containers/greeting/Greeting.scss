@@ -2,12 +2,14 @@
 
 .main {
   width: 90%;
+  max-width: 1400px;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 4rem;
 }
 .greet-main {
   width: 90%;
+  max-width: 1400px;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
@@ -15,14 +17,13 @@
 
 .greeting-main {
   display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 .subTitle {
   color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
+  line-height: 1.6;
 }
 
 .greeting-main > * {
@@ -36,7 +37,9 @@
 
 .button-greeting-div {
   display: flex;
+  gap: 20px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 .download-link-button {
   text-decoration: none;
@@ -45,12 +48,16 @@
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
-  color: $textColor !important;
+  color: $titleColor !important;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .greeting-text-p {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 1.5;
+  color: $textColor;
+  font-weight: 400;
 }
 
 .greeting-image-div > img {
@@ -96,24 +103,26 @@
     font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
   }
   .greeting-text {
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
+    font-size: 18px;
+    line-height: 1.6;
     text-align: center;
   }
   .greeting-main {
     display: block;
+    gap: 0;
   }
   .greeting-image-div {
     height: 256px;
@@ -123,5 +132,11 @@
 @media (max-width: 320px) {
   .main {
     width: auto;
+  }
+  .greeting-text {
+    font-size: 28px;
+  }
+  .greeting-text-p {
+    font-size: 16px;
   }
 }
